@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="src/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="weather-app">
+    <header>
+      <form id="search">
+        <input type="search" placeholder="Enter a city.." required class="weather-form-search" id="search-input" />
+        <input type="submit" value="Search" required class="weather-form-submit" />
+      </form>
+    </header>
+    <main>
+      <div class="main-body">
+        <div>
+          <h1 class="heading" id="city"></h1>
+          <p class="time">
+            <span id="time"></span>,
+            <span id="condition"> scattered clouds </span> <br />
+            Humidity:
+            <strong class="weather-humidity" id="humidity">82%</strong>, Wind:
+            <strong class="weather-wind" id="wind">0.45km/h</strong>
+          </p>
+        </div>
+        <div class="weather-temperature-container">
+          <div>
+            <div id="icon"></div>
+          </div>
+          <div class="weather-temperature" id="temperature"></div>
+          <div class="weather-app-unit">&deg;C</div>
+        </div>
+      </div>
+    </main>
+    <footer class="weather-footer">
+      This project was coded by
+      <a href="https://github.com/Anneytah" target="_blank">Aniago Somtochukwu</a>, is
+      <a href="" target="_blank">open-sourced on GitHub</a> and
+      <a href="" target="_blank">hosted on Netlify</a>
+    </footer>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+
+</html>
