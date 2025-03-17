@@ -57,7 +57,7 @@ strong {
   color: rgb(246, 82, 130);
   font-weight: bold;
 }
-.weather-temperature-container {
+.weather-temperature-body {
   display: flex;
 }
 .weather-temperature {
@@ -73,6 +73,40 @@ strong {
 .icon-image {
   font-size: 30px;
 }
+
+.weather-forcasts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.weather-day {
+  display: block;
+}
+
+.weather-date {
+  color: rgba(39, 33, 66, 0.4);
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  line-height: 20px;
+}
+.weather-image {
+  font-size: 16px;
+  text-align: center;
+  /* padding: 10px; */
+}
+.temperatures {
+  display: flex;
+  justify-content: center;
+  color: #f65282;
+  margin-top: 10px;
+  text-align: center;
+}
+.temperature-unit {
+  padding: 0 8px;
+}
+
 .weather-footer {
   text-align: center;
   font-size: 13px;
